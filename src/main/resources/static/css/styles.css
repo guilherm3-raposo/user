@@ -1,0 +1,43 @@
+:root {
+    --c1: #eee;
+    --c2: #ddd;
+    --color: hsl(232, 22%, 5%);
+    --input-bg: #fff;
+    --input-height: 36px;
+    --btn-bg: rgb(61, 102, 216);
+    --btn-color: #fff;
+}
+
+.dark:root {
+    --c1: #161d47;
+    --c2: #252836;
+    --color: rgb(88, 95, 139);
+    --input-bg: #16192a;
+    /* --btn-bg: #5169cd; */
+    /* --btn-color: var(--color); */
+}
+
+* {
+    box-sizing: border-box;
+}
+
+*:not(input, textarea) {
+    user-select: none;
+}
+
+html,
+body {
+    width: 100%;
+    padding: 0px;
+    margin: 0;
+    font-family: Helvetica, sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(45deg, var(--c1), var(--c2));
+    color: var(--color);
+    font-family: Verdana;
+}
