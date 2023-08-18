@@ -6,6 +6,16 @@ public class User {
     private String password;
     private String avatar;
 
+    public User() {
+    }
+
+    public User(Integer id, String username, String password, String avatar) {
+        this.setId(id);
+        this.setUsername(username);
+        this.setPassword(password);
+        this.setAvatar(avatar);
+    }
+
     public Integer getId() {
         return this.id;
     }
